@@ -1,0 +1,83 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+.education h1{
+    text-align: center;
+    font-size: 60px;
+}
+.education-details{
+    line-height: 25px;
+}
+.education-details h4{
+    padding-left: 10px;
+}
+
+.education-course {
+  border-left: 3px solid #ff8c00;
+  padding-left: 15px;
+  position: relative;
+}
+.education-course::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #ff8c00;
+  border-radius: 50%;
+  left: -8px;
+  top: 10px;
+}
+.education-course {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-course:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.education-course h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.education-course h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  left: 0;
+  bottom: -5px;
+  border-radius: 3px;
+}
+.education-details li:hover {
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+.education-details ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.education-details li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+.education-details:hover h4{
+    color: #ffd700;
+  transition: color 0.3s ease;
+}
+.education-details:hover p{
+    color: #ffd700;
+  transition: color 0.3s ease;
+}
